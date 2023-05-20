@@ -1,4 +1,7 @@
 @import '~bootstrap';
+@import 'node_modules/swiper/swiper';
+@import 'node_modules/swiper/modules/navigation/navigation';
+@import 'node_modules/swiper/modules/pagination/pagination';
 body {
     background-color: #F8F8F7;
 }
@@ -11,4 +14,54 @@ body {
             height:50px;
         }
     }
+}
+.main-product {
+    .product-gallery {
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #000000;
+        }
+        .gallery-slider {
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+
+            .swiper-slide {
+                width: auto;
+                height: 400px;
+
+                img {
+                    display: block;
+                    width: auto;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+
+        .gallery-thumbs {
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+
+            .swiper-slide {;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                overflow: hidden;
+                opacity: .1;
+
+                &-active {
+                    opacity: 1;
+                }
+
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
 }
