@@ -63,5 +63,57 @@ body {
             }
         }
     }
+    .product-info {
+        .product-title {
+            font-weight:400;
+            margin-bottom:30px;
 
+        }
+        .price {
+            .current-price {
+                font-size: 2rem;
+                font-weight:600;
+            }
+            .old-price {
+                font-size:1rem;
+                text-decoration:line-through;
+            }
+        }
+        .nav-pills li a.active{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .nav-pills li a {
+            color: #000000;
+            border-color: #ffffff;
+        }
+    }
+
+}
+.product-info-nav {
+    background-color: #F8F8F7;
+
+    .nav-link.active {
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 37px;
+    }
+}
+
+#sizeGuide {
+
+    background-color: #F8F8F7;
+    .size-info {
+        .size-info-bullet {
+            color: #C9C9C9;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            border: 1px solid #C9C9C9;
+            padding: 3px;
+            height: 33px;
+            width: 33px;
+            text-align: center;
+            display: inline-block;
+        }
+    }
 }

@@ -8,7 +8,7 @@
     <header>
         @include('includes.header')
     </header>
-    <div id="main" class="px-5 py-4">
+    <div id="main">
         @yield('content')
     </div>
 
